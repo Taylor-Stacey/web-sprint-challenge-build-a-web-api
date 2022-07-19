@@ -1,6 +1,5 @@
 // Write your "projects" router here!
 const express = require('express');
-const server = require('../server');
 
 const { validateProject, validateProjectId } = require('./projects-middleware');
 const Projects = require('./projects-model');

@@ -6,7 +6,7 @@ function validateProject(req, res, next) {
         next({ message: 'invalid project', status: 400 });
         return;
     }
-    if (typeof req.body.description !== 'string' || req.body.description.trim() === '' ) {
+    if (typeof req.body.description !== 'string'  || req.body.description.trim() === '' ) {
         next({ message: 'invalid project', status: 400 });
         return;
     }
